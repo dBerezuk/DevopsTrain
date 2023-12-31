@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="images/icon/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <nav class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__images" src="images/logo.svg" alt="лого devopsTrain">
+          </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__item-link" href="#courses">Курсы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#works">Как это работает?</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#benefits">Преимущества</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#team">Команда</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#faq">FAQ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__item-link" href="#blog">Блог</a>
+            </li>
+          </ul>
+          <button class="header__mobile-btn" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="top">
+        <div class="container">
+          <div class="top__content">
+            <div class="top__content-box">
+              <h1 class="title">Обучаем профессии DevOps на практике</h1>
+              <p class="top__text">
+                Набор практических занятий для обучения основам Kubernetes
+              </p>
+              <a class="link top__link" href="#courses">Выбрать курс</a>
+            </div>
+            <div class="top__images">
+              <img class="top__img" src="images/top.svg" alt="картинка">
+            </div>
+          </div>
+          <div class="top__items">
+            <div class="top__item">
+              <div class="top__item-images">
+                <img class="top__item-img" src="images/icon/instructions.svg" alt="инструкции иконка">
+              </div>
+              <h4 class="top__item-title">Пошаговые инструкции</h4>
+              <p class="top__item-text">
+                Движение от простого к сложному, пошаговое выполнение инструкций с подробным описанием результата
+              </p>
+            </div>
+            <div class="top__item">
+              <div class="top__item-images">
+                <img class="top__item-img" src="images/icon/automatic-check.svg" alt="автоматическая проверка иконка">
+              </div>
+              <h4 class="top__item-title">Автоматическая проверка</h4>
+              <p class="top__item-text">
+                После выполнения каждого задания вы сможете проверить решение сразу, не обращаясь к преподавателю
+              </p>
+            </div>
+            <div class="top__item">
+              <div class="top__item-images">
+                <img class="top__item-img" src="images/icon/question.svg" alt="возможность задать вопрос иконка">
+              </div>
+              <h4 class="top__item-title">Возможность задать вопрос</h4>
+              <p class="top__item-text">
+                Обратная связь с автором курса на каждом шаге. Список самых популярных вопросов с ответами
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="courses" id="courses">
+        <div class="container">
+          <h2 class="title">Курсы</h2>
+          <div class="courses__tabs">
+            <div class="courses__tabs-top">
+              <button class="courses__tabs-btn courses__tabs-btn--active" type="button" data-content="kubernetes">
+                <span style="background-image: url(images/icon/kubernetes.svg)"></span>
+                Kubernetes на практике
+              </button>
+              <button class="courses__tabs-btn" type="button" data-content="terraform">
+                <span style="background-image: url(images/icon/terraform.svg)"></span>
+                Terraform на практике
+              </button>
+              <button class="courses__tabs-btn" type="button" data-content="ci-cd">
+                <span style="background-image: url(images/icon/CI-CD.svg)"></span>
+                CI/CD на практике
+              </button>
+              <button class="courses__tabs-btn" type="button" data-content="kubernetes-advanced">
+                <span style="background-image: url(images/icon/kubernetes.svg)"></span>
+                Kubernetes advanced
+              </button>
+            </div>
+            <div class="courses__tabs-box" id="faq">
+              <div class="courses__tabs-content courses__tabs-content--active" id="kubernetes">
+                <button class="courses__tabs-contentbtn courses__tabs-contentbtn--active" type="button">
+                  <span style="background-image: url(images/icon/kubernetes.svg)"></span>
+                  Kubernetes на практике
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.4L10.6 -6.11959e-08L6 4.6L1.4 -4.63341e-07L-6.11959e-08 1.4L6 7.4L12 1.4Z" fill="#A46CFF"/>
+                  </svg>
+                </button>
+                <div class="courses__tabs-content-box">
+                  <h2 class="courses__tabs-name">
+                    <span style="background-image: url(images/icon/kubernetes.svg)"></span>
+                    kubernetes
+                  </h2>
+                  <div class="courses__tabs-columns">
+                    <div class="courses__tabs-infobox">
+                      <div class="courses__tabs-info">
+                        <div class="courses__tabs-infocontent">
+                          <h3 class="courses__tabs-title">Курс “Kubernetes на практике”</h3>
+                          <p class="courses__tabs-text">
+                            Курс подойдет не только DevOps инженерам, но и разработчикам,
+                            имеющим дело с k8s. Он включает в себя все важные практические знания,
+                            необходимые в работе. В основе курса подход "от практики к теории" - скучно не будет!
+                          </p>
+                          <p class="courses__tabs-text">
+                            Покупка дает право на скидку на другие авторские курсы
+                          </p>
+                          <h4 class="courses__subtitle">Задачи практики (25 занятий)</h4>
+                          <ol class="courses__tabs-list">
+                            <li class="courses__tabs-listitem">
+                              Запуск кластера, файл конфигурации
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              Установка kubectl. Подключение к кластеру
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              Запуск продакшн нагрузки через kubectl
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              Создание манифеста для описания нагрузки (pod, deployment)
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              1
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              2
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              3
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              4
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              5
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              6
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                      <button type="button" class="courses__tabs-btnview">
+                        Показать все
+                        <span></span>
+                      </button>
+                    </div>
+                    <div class="courses__tabs-begin">
+                      <p class="courses__tabs-begintitle">Стоимость курса</p>
+                      <div class="courses__tabs-price">
+                        <p class="courses__tabs-pastprice">8900 ₽</p>
+                        <h6 class="courses__price">6900 ₽</h6>
+                        <p class="courses__price-dollar courses__tabs-pricedollar">
+                          / 80$
+                          <svg class="courses__price-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.85 5.85L7.15 5.85L7.15 9.75L5.85 9.75L5.85 5.85ZM5.85 3.25L7.15 3.25L7.15 4.55L5.85 4.55L5.85 3.25ZM6.5 13C7.35359 13 8.19883 12.8319 8.98744 12.5052C9.77606 12.1786 10.4926 11.6998 11.0962 11.0962C12.3152 9.87721 13 8.22391 13 6.5C13 4.77609 12.3152 3.12279 11.0962 1.90381C10.4926 1.30023 9.77606 0.821438 8.98744 0.494783C8.19883 0.168127 7.35359 2.81236e-07 6.5 2.06612e-07C4.77609 5.59035e-08 3.12279 0.68482 1.90381 1.90381C0.68482 3.12279 -2.34718e-07 4.77609 -3.85426e-07 6.5C-4.6005e-07 7.35359 0.168126 8.19883 0.494782 8.98744C0.821437 9.77606 1.30023 10.4926 1.90381 11.0962C2.50739 11.6998 3.22394 12.1786 4.01256 12.5052C4.80117 12.8319 5.64641 13 6.5 13Z" fill="#5C4484"/>
+                          </svg>
+                          <span class="courses__price-info courses__tabs-priceinfo">
+                            цены в рублях при оплате картой РФ, а в долларах при оплате любой другой картой
+                          </span>
+                        </p>
+                      </div>
+                      <a class="courses__tabs-link link" href="#">Начать бесплатно</a>
+                      <p class="courses__tabs-begintext">
+                        Бесплатно выдается доступ на первые 4 задачи практики
+                      </p>
+                    </div>
+                  </div>
+                  <a class="courses__link-more" href="#">
+                    Подробнее о курсе
+                    <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.2929L16.3431 0.928934C15.9526 0.538409 15.3195 0.538409 14.9289 0.928933C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM1 9L22 9L22 7L1 7L1 9Z" fill="white"/>
+                    </svg>
+                  </a>
+                  <button class="courses__faq-btn" type="button">
+                    <h4 class="courses__subtitle courses__subtitle-faq">
+                      FAQ
+                      <span></span>
+                    </h4>
+                  </button>
+                  <div class="courses__accordion-items">
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Для кого этот курс?</h6>
+                        <img class="courses__accordion-icon courses__accordion-icon--active" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content courses__accordion-content--active">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Как происходит автоматическая проверка задания?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Какая у менядолжна быть базовая подготовка для выполнения заданий?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">На какой срок расчитан данный курс?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Если я не нашел ответа на вопрос, поможете?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Могу ли я пропускать некоторые задания и сразу переходить к произвольному?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">В чем отлиие от аналогичных курсов на известных образовательных сервисах?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__tabs-content" id="terraform">
+                <button class="courses__tabs-contentbtn" type="button">
+                  <span style="background-image: url(images/icon/terraform.svg)"></span>
+                  Terraform на практике
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.4L10.6 -6.11959e-08L6 4.6L1.4 -4.63341e-07L-6.11959e-08 1.4L6 7.4L12 1.4Z" fill="#A46CFF"/>
+                  </svg>
+                </button>
+                <div class="courses__tabs-content-box">
+                  <h2 class="courses__tabs-name">
+                    <span style="background-image: url(images/icon/terraform.svg)"></span>
+                    terraform
+                  </h2>
+                  <div class="courses__tabs-columns">
+                    <div class="courses__tabs-infobox">
+                      <div class="courses__tabs-info">
+                        <div class="courses__tabs-infocontent">
+                          <h3 class="courses__tabs-title">Курс “Terraform на практике”</h3>
+                          <p class="courses__tabs-text">
+                            Курс подойдет не только DevOps инженерам, но и разработчикам,
+                            имеющим дело с k8s. Он включает в себя все важные практические знания,
+                            необходимые в работе. В основе курса подход "от практики к теории" - скучно не будет!
+                          </p>
+                          <p class="courses__tabs-text">
+                            Покупка дает право на скидку на другие авторские курсы
+                          </p>
+                          <h4 class="courses__subtitle">Задачи практики (25 занятий)</h4>
+                          <ol class="courses__tabs-list">
+                            <li class="courses__tabs-listitem">
+                              Запуск кластера, файл конфигурации
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              Установка kubectl. Подключение к кластеру
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              Запуск продакшн нагрузки через kubectl
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              Создание манифеста для описания нагрузки (pod, deployment)
+                            </li>
+                          </ol>
+                          <p class="courses__tabs-text">
+                            Курс подойдет не только DevOps инженерам, но и разработчикам,
+                            имеющим дело с k8s. Он включает в себя все важные практические знания,
+                            необходимые в работе. В основе курса подход "от практики к теории" - скучно не будет!
+                          </p>
+                        </div>
+                      </div>
+                      <button type="button" class="courses__tabs-btnview">
+                        Показать все
+                        <span></span>
+                      </button>
+                    </div>
+                    <div class="courses__tabs-begin">
+                      <p class="courses__tabs-begintitle">Стоимость курса</p>
+                      <div class="courses__tabs-price">
+                        <p class="courses__tabs-pastprice">8900 ₽</p>
+                        <h6 class="courses__price">6900 ₽</h6>
+                        <p class="courses__price-dollar courses__tabs-pricedollar">
+                          / 80$
+                          <svg class="courses__price-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.85 5.85L7.15 5.85L7.15 9.75L5.85 9.75L5.85 5.85ZM5.85 3.25L7.15 3.25L7.15 4.55L5.85 4.55L5.85 3.25ZM6.5 13C7.35359 13 8.19883 12.8319 8.98744 12.5052C9.77606 12.1786 10.4926 11.6998 11.0962 11.0962C12.3152 9.87721 13 8.22391 13 6.5C13 4.77609 12.3152 3.12279 11.0962 1.90381C10.4926 1.30023 9.77606 0.821438 8.98744 0.494783C8.19883 0.168127 7.35359 2.81236e-07 6.5 2.06612e-07C4.77609 5.59035e-08 3.12279 0.68482 1.90381 1.90381C0.68482 3.12279 -2.34718e-07 4.77609 -3.85426e-07 6.5C-4.6005e-07 7.35359 0.168126 8.19883 0.494782 8.98744C0.821437 9.77606 1.30023 10.4926 1.90381 11.0962C2.50739 11.6998 3.22394 12.1786 4.01256 12.5052C4.80117 12.8319 5.64641 13 6.5 13Z" fill="#5C4484"/>
+                          </svg>
+                          <span class="courses__price-info courses__tabs-priceinfo">
+                            цены в рублях при оплате картой РФ, а в долларах при оплате любой другой картой
+                          </span>
+                        </p>
+                      </div>
+                      <a class="courses__tabs-link link courses__tabs-linkbtn" href="#">Начать бесплатно</a>
+                      <p class="courses__tabs-begintext">
+                        Бесплатно выдается доступ на первые 4 задачи практики
+                      </p>
+                    </div>
+                  </div>
+                  <a class="courses__link-more" href="#">
+                    Подробнее о курсе
+                    <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.2929L16.3431 0.928934C15.9526 0.538409 15.3195 0.538409 14.9289 0.928933C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM1 9L22 9L22 7L1 7L1 9Z" fill="white"/>
+                    </svg>
+                  </a>
+                  <button class="courses__faq-btn" type="button">
+                    <h4 class="courses__subtitle courses__subtitle-faq">
+                      FAQ
+                      <span></span>
+                    </h4>
+                  </button>
+                  <div class="courses__accordion-items">
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Для кого этот курс?</h6>
+                        <img class="courses__accordion-icon courses__accordion-icon--active" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content courses__accordion-content--active">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Как происходит автоматическая проверка задания?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Какая у менядолжна быть базовая подготовка для выполнения заданий?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">На какой срок расчитан данный курс?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Если я не нашел ответа на вопрос, поможете?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Могу ли я пропускать некоторые задания и сразу переходить к произвольному?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">В чем отлиие от аналогичных курсов на известных образовательных сервисах?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__tabs-content" id="ci-cd">
+                <button class="courses__tabs-contentbtn" type="button">
+                  <span style="background-image: url(images/icon/CI-CD.svg)"></span>
+                  CI/CD на практике
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.4L10.6 -6.11959e-08L6 4.6L1.4 -4.63341e-07L-6.11959e-08 1.4L6 7.4L12 1.4Z" fill="#A46CFF"/>
+                  </svg>
+                </button>
+                <div class="courses__tabs-content-box">
+                  <h2 class="courses__tabs-name">
+                    <span style="background-image: url(images/icon/CI-CD.svg)"></span>
+                    CI/CD
+                  </h2>
+                  <div class="courses__tabs-columns">
+                    <div class="courses__tabs-infobox">
+                      <div class="courses__tabs-info">
+                        <div class="courses__tabs-infocontent">
+                          <h3 class="courses__tabs-title">Курс “CI/CD на практике”</h3>
+                          <p class="courses__tabs-text">
+                            Курс подойдет не только DevOps инженерам, но и разработчикам,
+                            имеющим дело с k8s. Он включает в себя все важные практические знания,
+                            необходимые в работе. В основе курса подход "от практики к теории" - скучно не будет!
+                          </p>
+                          <p class="courses__tabs-text">
+                            Покупка дает право на скидку на другие авторские курсы
+                          </p>
+                          <h4 class="courses__subtitle">Задачи практики (25 занятий)</h4>
+                          <ol class="courses__tabs-list">
+                            <li class="courses__tabs-listitem">
+                              Запуск кластера, файл конфигурации
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              Установка kubectl. Подключение к кластеру
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              Запуск продакшн нагрузки через kubectl
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              Создание манифеста для описания нагрузки (pod, deployment)
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              1
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              2
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              3
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              4
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                      <button type="button" class="courses__tabs-btnview">
+                        Показать все
+                        <span></span>
+                      </button>
+                    </div>
+                    <div class="courses__tabs-begin">
+                      <p class="courses__tabs-begintitle">Стоимость курса</p>
+                      <div class="courses__tabs-price">
+                        <p class="courses__tabs-pastprice">8900 ₽</p>
+                        <h6 class="courses__price">6900 ₽</h6>
+                        <p class="courses__price-dollar courses__tabs-pricedollar">
+                          / 80$
+                          <svg class="courses__price-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.85 5.85L7.15 5.85L7.15 9.75L5.85 9.75L5.85 5.85ZM5.85 3.25L7.15 3.25L7.15 4.55L5.85 4.55L5.85 3.25ZM6.5 13C7.35359 13 8.19883 12.8319 8.98744 12.5052C9.77606 12.1786 10.4926 11.6998 11.0962 11.0962C12.3152 9.87721 13 8.22391 13 6.5C13 4.77609 12.3152 3.12279 11.0962 1.90381C10.4926 1.30023 9.77606 0.821438 8.98744 0.494783C8.19883 0.168127 7.35359 2.81236e-07 6.5 2.06612e-07C4.77609 5.59035e-08 3.12279 0.68482 1.90381 1.90381C0.68482 3.12279 -2.34718e-07 4.77609 -3.85426e-07 6.5C-4.6005e-07 7.35359 0.168126 8.19883 0.494782 8.98744C0.821437 9.77606 1.30023 10.4926 1.90381 11.0962C2.50739 11.6998 3.22394 12.1786 4.01256 12.5052C4.80117 12.8319 5.64641 13 6.5 13Z" fill="#5C4484"/>
+                          </svg>
+                          <span class="courses__price-info courses__tabs-priceinfo">
+                            цены в рублях при оплате картой РФ, а в долларах при оплате любой другой картой
+                          </span>
+                        </p>
+                      </div>
+                      <a class="courses__tabs-link link courses__tabs-linkbtn" href="#">Начать бесплатно</a>
+                      <p class="courses__tabs-begintext">
+                        Бесплатно выдается доступ на первые 4 задачи практики
+                      </p>
+                    </div>
+                  </div>
+                  <a class="courses__link-more" href="#">
+                    Подробнее о курсе
+                    <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.2929L16.3431 0.928934C15.9526 0.538409 15.3195 0.538409 14.9289 0.928933C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM1 9L22 9L22 7L1 7L1 9Z" fill="white"/>
+                    </svg>
+                  </a>
+                  <button class="courses__faq-btn" type="button">
+                    <h4 class="courses__subtitle courses__subtitle-faq">
+                      FAQ
+                      <span></span>
+                    </h4>
+                  </button>
+                  <div class="courses__accordion-items">
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Для кого этот курс?</h6>
+                        <img class="courses__accordion-icon courses__accordion-icon--active" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content courses__accordion-content--active">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Как происходит автоматическая проверка задания?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Какая у менядолжна быть базовая подготовка для выполнения заданий?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">На какой срок расчитан данный курс?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Если я не нашел ответа на вопрос, поможете?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Могу ли я пропускать некоторые задания и сразу переходить к произвольному?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">В чем отлиие от аналогичных курсов на известных образовательных сервисах?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="courses__tabs-content" id="kubernetes-advanced">
+                <button class="courses__tabs-contentbtn" type="button">
+                  <span style="background-image: url(images/icon/kubernetes.svg)"></span>
+                  Kubernetes advanced
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.4L10.6 -6.11959e-08L6 4.6L1.4 -4.63341e-07L-6.11959e-08 1.4L6 7.4L12 1.4Z" fill="#A46CFF"/>
+                  </svg>
+                </button>
+                <div class="courses__tabs-content-box">
+                  <h2 class="courses__tabs-name">
+                    <span style="background-image: url(images/icon/kubernetes.svg)"></span>
+                    Kubernetes advanced
+                  </h2>
+                  <div class="courses__tabs-columns">
+                    <div class="courses__tabs-infobox">
+                      <div class="courses__tabs-info">
+                        <div class="courses__tabs-infocontent">
+                          <h3 class="courses__tabs-title">Курс “Kubernetes advanced”</h3>
+                          <p class="courses__tabs-text">
+                            Курс подойдет не только DevOps инженерам, но и разработчикам,
+                            имеющим дело с k8s. Он включает в себя все важные практические знания,
+                            необходимые в работе. В основе курса подход "от практики к теории" - скучно не будет!
+                          </p>
+                          <p class="courses__tabs-text">
+                            Покупка дает право на скидку на другие авторские курсы
+                          </p>
+                          <h4 class="courses__subtitle">Задачи практики (25 занятий)</h4>
+                          <ol class="courses__tabs-list">
+                            <li class="courses__tabs-listitem">
+                              Запуск кластера, файл конфигурации
+                            </li>
+                            <li class="courses__tabs-listitem">
+                              Установка kubectl. Подключение к кластеру
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                      <button type="button" class="courses__tabs-btnview">
+                        Показать все
+                        <span></span>
+                      </button>
+                    </div>
+                    <div class="courses__tabs-begin">
+                      <p class="courses__tabs-begintitle">Стоимость курса</p>
+                      <div class="courses__tabs-price">
+                        <p class="courses__tabs-pastprice">8900 ₽</p>
+                        <h6 class="courses__price">6900 ₽</h6>
+                        <p class="courses__price-dollar courses__tabs-pricedollar">
+                          / 80$
+                          <svg class="courses__price-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.85 5.85L7.15 5.85L7.15 9.75L5.85 9.75L5.85 5.85ZM5.85 3.25L7.15 3.25L7.15 4.55L5.85 4.55L5.85 3.25ZM6.5 13C7.35359 13 8.19883 12.8319 8.98744 12.5052C9.77606 12.1786 10.4926 11.6998 11.0962 11.0962C12.3152 9.87721 13 8.22391 13 6.5C13 4.77609 12.3152 3.12279 11.0962 1.90381C10.4926 1.30023 9.77606 0.821438 8.98744 0.494783C8.19883 0.168127 7.35359 2.81236e-07 6.5 2.06612e-07C4.77609 5.59035e-08 3.12279 0.68482 1.90381 1.90381C0.68482 3.12279 -2.34718e-07 4.77609 -3.85426e-07 6.5C-4.6005e-07 7.35359 0.168126 8.19883 0.494782 8.98744C0.821437 9.77606 1.30023 10.4926 1.90381 11.0962C2.50739 11.6998 3.22394 12.1786 4.01256 12.5052C4.80117 12.8319 5.64641 13 6.5 13Z" fill="#5C4484"/>
+                          </svg>
+                          <span class="courses__price-info courses__tabs-priceinfo">
+                            цены в рублях при оплате картой РФ, а в долларах при оплате любой другой картой
+                          </span>
+                        </p>
+                      </div>
+                      <a class="courses__tabs-link link courses__tabs-linkbtn" href="#">Начать бесплатно</a>
+                      <p class="courses__tabs-begintext">
+                        Бесплатно выдается доступ на первые 4 задачи практики
+                      </p>
+                    </div>
+                  </div>
+                  <a class="courses__link-more" href="#">
+                    Подробнее о курсе
+                    <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7C0.447715 7 4.82823e-08 7.44772 0 8C-4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.2929L16.3431 0.928934C15.9526 0.538409 15.3195 0.538409 14.9289 0.928933C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM1 9L22 9L22 7L1 7L1 9Z" fill="white"/>
+                    </svg>
+                  </a>
+                  <button class="courses__faq-btn" type="button">
+                    <h4 class="courses__subtitle courses__subtitle-faq">
+                      FAQ
+                      <span></span>
+                    </h4>
+                  </button>
+                  <div class="courses__accordion-items">
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Для кого этот курс?</h6>
+                        <img class="courses__accordion-icon courses__accordion-icon--active" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content courses__accordion-content--active">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Как происходит автоматическая проверка задания?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Какая у менядолжна быть базовая подготовка для выполнения заданий?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">На какой срок расчитан данный курс?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Если я не нашел ответа на вопрос, поможете?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">Могу ли я пропускать некоторые задания и сразу переходить к произвольному?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="courses__accordion-item">
+                      <div class="courses__accordion-itemtop">
+                        <h6 class="courses__accordion-subminititle">В чем отлиие от аналогичных курсов на известных образовательных сервисах?</h6>
+                        <img class="courses__accordion-icon" src="images/icon/arrow-down.svg" alt="стрелка иконка">
+                      </div>
+                      <div class="courses__accordion-content">
+                        <p class="courses__accordion-text">
+                          Для devops инженеров, разработчиков и других IT специалистов,
+                          которые так или иначе имеют дело с Kubernetes. В настоящее время уровень
+                          внедрения этого продукта очень высок среди различных организаций и понимание
+                          тонкостей его работы требуется часто.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="courses__data">
+              <div class="courses__data-item">
+                <div class="courses__data-info">
+                  <img class="courses__data-avatar" src="images/avatar.jpg" alt="аватарка">
+                  <div class="courses__data-infocontent">
+                    <strong class="courses__data-name">Александр Бабочкин</strong>
+                    <p class="courses__data-specialist">CTO, DevOps инженер, Go разработчик</p>
+                  </div>
+                </div>
+                <div class="courses__data-content">
+                  <h6 class="courses__data-title">Частные консультации</h6>
+                  <p class="courses__data-text">
+                    Персональный план профессионального развития на основе ваших навыков и приоритетов
+                  </p>
+                  <ul class="courses__data-list">
+                    <li class="courses__data-listitem">
+                      Lorem ipsum dolor sit amet, consectetur
+                    </li>
+                    <li class="courses__data-listitem">
+                      Lorem ipsum dolor sit amet, consectetur
+                    </li>
+                    <li class="courses__data-listitem">
+                      Lorem ipsum dolor sit amet, consectetur
+                    </li>
+                    <li class="courses__data-listitem">
+                      Lorem ipsum dolor sit amet, consectetur
+                    </li>
+                  </ul>
+                  <div class="courses__data-price">
+                    <p class="courses__data-pricetext">Стоимость -</p>
+                    <h6 class="courses__price">6900 ₽</h6>
+                    <p class="courses__price-dollar">
+                      / 80$
+                      <svg class="courses__price-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.85 5.85L7.15 5.85L7.15 9.75L5.85 9.75L5.85 5.85ZM5.85 3.25L7.15 3.25L7.15 4.55L5.85 4.55L5.85 3.25ZM6.5 13C7.35359 13 8.19883 12.8319 8.98744 12.5052C9.77606 12.1786 10.4926 11.6998 11.0962 11.0962C12.3152 9.87721 13 8.22391 13 6.5C13 4.77609 12.3152 3.12279 11.0962 1.90381C10.4926 1.30023 9.77606 0.821438 8.98744 0.494783C8.19883 0.168127 7.35359 2.81236e-07 6.5 2.06612e-07C4.77609 5.59035e-08 3.12279 0.68482 1.90381 1.90381C0.68482 3.12279 -2.34718e-07 4.77609 -3.85426e-07 6.5C-4.6005e-07 7.35359 0.168126 8.19883 0.494782 8.98744C0.821437 9.77606 1.30023 10.4926 1.90381 11.0962C2.50739 11.6998 3.22394 12.1786 4.01256 12.5052C4.80117 12.8319 5.64641 13 6.5 13Z" fill="#5C4484"/>
+                      </svg>
+                      <span class="courses__price-info">
+                            цены в рублях при оплате картой РФ, а в долларах при оплате любой другой картой
+                          </span>
+                    </p>
+                  </div>
+                  <a class="link courses__data-link" href="#">Онлайн-запись</a>
+                </div>
+              </div>
+              <div class="courses__data-item">
+                <div class="courses__data-info">
+                  <div class="courses__data-avatarbox courses__data-avatarbox--shadow">
+                    <img class="courses__data-avatar courses__data-avatar--icon" src="images/icon/education.svg" alt="иконка обучения">
+                  </div>
+                </div>
+                <div class="courses__data-content">
+                  <h6 class="courses__data-title">Корпоративное обучение</h6>
+                  <p class="courses__data-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                  <ul class="courses__data-list">
+                    <li class="courses__data-listitem">
+                      Lorem ipsum dolor sit amet, consectetur
+                    </li>
+                    <li class="courses__data-listitem">
+                      Lorem ipsum dolor sit amet, consectetur
+                    </li>
+                    <li class="courses__data-listitem">
+                      Lorem ipsum dolor sit amet, consectetur
+                    </li>
+                    <li class="courses__data-listitem">
+                      Lorem ipsum dolor sit amet, consectetur
+                    </li>
+                  </ul>
+                  <div class="courses__data-price">
+                    <p class="courses__data-pricetext">Стоимость -</p>
+                    <h6 class="courses__price">6900 ₽</h6>
+                    <p class="courses__price-dollar">
+                      / 80$
+                      <svg class="courses__price-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.85 5.85L7.15 5.85L7.15 9.75L5.85 9.75L5.85 5.85ZM5.85 3.25L7.15 3.25L7.15 4.55L5.85 4.55L5.85 3.25ZM6.5 13C7.35359 13 8.19883 12.8319 8.98744 12.5052C9.77606 12.1786 10.4926 11.6998 11.0962 11.0962C12.3152 9.87721 13 8.22391 13 6.5C13 4.77609 12.3152 3.12279 11.0962 1.90381C10.4926 1.30023 9.77606 0.821438 8.98744 0.494783C8.19883 0.168127 7.35359 2.81236e-07 6.5 2.06612e-07C4.77609 5.59035e-08 3.12279 0.68482 1.90381 1.90381C0.68482 3.12279 -2.34718e-07 4.77609 -3.85426e-07 6.5C-4.6005e-07 7.35359 0.168126 8.19883 0.494782 8.98744C0.821437 9.77606 1.30023 10.4926 1.90381 11.0962C2.50739 11.6998 3.22394 12.1786 4.01256 12.5052C4.80117 12.8319 5.64641 13 6.5 13Z" fill="#5C4484"/>
+                      </svg>
+                      <span class="courses__price-info">
+                            цены в рублях при оплате картой РФ, а в долларах при оплате любой другой картой
+                          </span>
+                    </p>
+                  </div>
+                  <a class="link courses__data-link" href="#">Онлайн-запись</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="works" id="works">
+        <div class="container">
+          <h2 class="title works__title">Как это работает?</h2>
+          <div class="works__items">
+            <div class="works__item">
+              <p class="works__item-num">/01</p>
+              <p class="works__item-text">
+                Вы получаете подробную инструкцию для выполнения каждого задания и готовый тестовый стенд
+              </p>
+            </div>
+            <div class="works__item">
+              <p class="works__item-num">/02</p>
+              <p class="works__item-text">
+                После выполнения задания происходит автоматическая проверка вашего результата
+              </p>
+            </div>
+            <div class="works__item">
+              <p class="works__item-num">/03</p>
+              <p class="works__item-text">
+                По каждому заданию курса вы можете задать вопрос автору и  получить ответ
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits" id="benefits">
+        <div class="container">
+          <h2 class="title benefits__title">Преимущества<br>платформы</h2>
+          <div class="benefits__slider">
+            <div class="benefits__slider-item">
+              <div class="benefits__slider-images">
+                <img class="benefits__slider-img" src="images/icon/check.svg" alt="преимущества иконки">
+              </div>
+              <p class="benefits__slider-text">
+                Вы получаете практические знания, выполняя задания в готовой, реально работающей среде
+              </p>
+            </div>
+            <div class="benefits__slider-item">
+              <div class="benefits__slider-images">
+                <img class="benefits__slider-img" src="images/icon/check.svg" alt="преимущества иконки">
+              </div>
+              <p class="benefits__slider-text">
+                Не требуется запускать кластер самостоятельно и оплачивать его. Все готово к работе!
+              </p>
+            </div>
+            <div class="benefits__slider-item">
+              <div class="benefits__slider-images">
+                <img class="benefits__slider-img" src="images/icon/check.svg" alt="преимущества иконки">
+              </div>
+              <p class="benefits__slider-text">
+                Мгновенная проверка каждого задания дает возможность сразу узнать о результате своей работы
+              </p>
+            </div>
+            <div class="benefits__slider-item">
+              <div class="benefits__slider-images">
+                <img class="benefits__slider-img" src="images/icon/check.svg" alt="преимущества иконки">
+              </div>
+              <p class="benefits__slider-text">
+                Обратная связь с автором курса на каждом шаге — уточните любые детали, если что-то непонятно
+              </p>
+            </div>
+            <div class="benefits__slider-item">
+              <div class="benefits__slider-images">
+                <img class="benefits__slider-img" src="images/icon/check.svg" alt="преимущества иконки">
+              </div>
+              <p class="benefits__slider-text">
+                Это обновляемый курс. Мы постоянно дополняем и исправляем его, поэтому он всегда остается актуальным
+              </p>
+            </div>
+            <div class="benefits__slider-item">
+              <div class="benefits__slider-images">
+                <img class="benefits__slider-img" src="images/icon/check.svg" alt="преимущества иконки">
+              </div>
+              <p class="benefits__slider-text">
+                Версия запускаемого k8s кластера 1.25
+              </p>
+            </div>
+            <div class="benefits__slider-item">
+              <div class="benefits__slider-images">
+                <img class="benefits__slider-img" src="images/icon/check.svg" alt="преимущества иконки">
+              </div>
+              <p class="benefits__slider-text">
+                По завершению курса вы можете запросить сертификат от DevopsTrain
+              </p>
+            </div>
+            <div class="benefits__slider-item">
+              <div class="benefits__slider-images">
+                <img class="benefits__slider-img" src="images/icon/check.svg" alt="преимущества иконки">
+              </div>
+              <p class="benefits__slider-text">
+                Цена несравнимо ниже известных курсов, а эффект лучше
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team" id="team">
+        <div class="container">
+          <h2 class="title team__title">Команда</h2>
+          <div class="team__slider">
+            <div class="team__slider-item">
+              <div class="team__slider-itembox">
+                <div class="team__slider-avatarbox">
+                  <img class="team__slider-avatar" src="images/avatar.jpg" alt="аватарка">
+                </div>
+                <strong class="team__slider-name">Александр Бабочкин</strong>
+                <p class="team__slider-specialist">
+                  CTO, DevOps инженер, Go разработчик
+                </p>
+              </div>
+            </div>
+            <div class="team__slider-item">
+              <div class="team__slider-itembox">
+                <div class="team__slider-avatarbox">
+                  <img class="team__slider-avatar" src="images/avatar.jpg" alt="аватарка">
+                </div>
+                <strong class="team__slider-name">Александр Бабочкин</strong>
+                <p class="team__slider-specialist">
+                  CTO, DevOps инженер, Go разработчик
+                </p>
+              </div>
+            </div>
+            <div class="team__slider-item">
+              <div class="team__slider-itembox">
+                <div class="team__slider-avatarbox">
+                  <img class="team__slider-avatar" src="images/avatar.jpg" alt="аватарка">
+                </div>
+                <strong class="team__slider-name">Александр Бабочкин</strong>
+                <p class="team__slider-specialist">
+                  CTO, DevOps инженер, Go разработчик
+                </p>
+              </div>
+            </div>
+            <div class="team__slider-item">
+              <div class="team__slider-itembox">
+                <div class="team__slider-avatarbox">
+                  <img class="team__slider-avatar" src="images/avatar.jpg" alt="аватарка">
+                </div>
+                <strong class="team__slider-name">Александр Бабочкин</strong>
+                <p class="team__slider-specialist">
+                  CTO, DevOps инженер, Go разработчик
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <h2 class="title reviews__title">Отзывы</h2>
+          <div class="reviews__slider">
+            <div class="reviews__slider-item">
+              <h6 class="reviews__slider-title">Хороший курс с пратическими заданиями</h6>
+              <p class="reviews__slider-text">
+                Это реально ценный курс по самым важным и актуальным разделам Kubernetes.
+                Сейчас, уже после окончания, использую его как справочник в своей работе
+              </p>
+              <div class="reviews__slider-infobox">
+                <img class="reviews__slider-avatar reviews__slider-avatar--no-avatar" src="images/no-avatar.svg" alt="avatar">
+                <p class="reviews__slider-info">Михайл, разработчик Python</p>
+              </div>
+            </div>
+            <div class="reviews__slider-item">
+              <h6 class="reviews__slider-title">Практикум явно недооценен</h6>
+              <p class="reviews__slider-text">
+                Курсы по k8s стоят в несколько раз дороже, но они все равно не дали бы
+                такого уровня погружения в практику, как тут. Плюс реальная экономия
+                на облачных ресурсах. По возникающим вопросам всегда получал быстрый ответ
+              </p>
+              <div class="reviews__slider-infobox">
+                <img class="reviews__slider-avatar reviews__slider-avatar--no-avatar" src="images/no-avatar.svg" alt="avatar">
+                <p class="reviews__slider-info">Иван, тимлид</p>
+              </div>
+            </div>
+            <div class="reviews__slider-item">
+              <h6 class="reviews__slider-title">Lorem ipsum dolor.</h6>
+              <p class="reviews__slider-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <div class="reviews__slider-infobox">
+                <img class="reviews__slider-avatar" src="images/avatar.jpg" alt="avatar">
+                <p class="reviews__slider-info">Lorem ipsum dolor sit amet, consectetur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog" id="blog">
+        <div class="container">
+          <h2 class="title blog__title">Блог</h2>
+          <div class="blog__slider">
+            <a class="blog__slider-item" href="#">
+              <h6 class="blog__slider-title">Почему devops направление в IT наиболее выгодное?</h6>
+              <p class="blog__slider-text">
+                Разберем причины, по которым выбирают devops, плюсы и минусы
+              </p>
+            </a>
+            <a class="blog__slider-item" href="#">
+              <h6 class="blog__slider-title">Инструменты для управления k8s</h6>
+              <p class="blog__slider-text">
+                Рассмотрим наиболее популярные и удобные приложения
+              </p>
+            </a>
+            <a class="blog__slider-item" href="#">
+              <h6 class="blog__slider-title">Как добавить пользователя в Kubernetes?</h6>
+              <p class="blog__slider-text">
+                Рассмотрим варианты аутентификации в k8s
+              </p>
+            </a>
+            <a class="blog__slider-item" href="#">
+              <h6 class="blog__slider-title">Кто такой Cloud engineer?</h6>
+              <p class="blog__slider-text">
+                В чем его отличие от devops engineer и в чем сходство?
+              </p>
+            </a>
+            <a class="blog__slider-item" href="#">
+              <h6 class="blog__slider-title">Observability stack</h6>
+              <p class="blog__slider-text">
+                Observability stack - необходимая часть успешной работы проекта
+              </p>
+            </a>
+            <a class="blog__slider-item" href="#">
+              <h6 class="blog__slider-title">Кто такой SRE?</h6>
+              <p class="blog__slider-text">
+                Site reliablity engineer - кто это, какими задачами занимается?
+              </p>
+            </a>
+            <a class="blog__slider-item" href="#">
+              <h6 class="blog__slider-title">Lorem ipsum dolor sit amet.</h6>
+              <p class="blog__slider-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta enim est eveniet fugit laboriosam maiores minima odio quos sit?
+              </p>
+            </a>
+            <a class="blog__slider-item" href="#">
+              <h6 class="blog__slider-title">Lorem ipsum dolor sit amet, consectetur!</h6>
+              <p class="blog__slider-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta enim es.
+              </p>
+            </a>
+            <a class="blog__slider-item" href="#">
+              <h6 class="blog__slider-title">Lorem ipsum dolor.</h6>
+              <p class="blog__slider-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta enim est.
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="email-modal" id="email-modal">
+        <div class="container">
+          <div class="email-modal__content">
+            <button class="email-modal__content-btnclose" type="button">
+              <img class="email-modal__content-btncloseicon" src="images/icon/close.svg" alt="закрыть">
+            </button>
+            <h3 class="email-modal__content-title">Отправить заявку</h3>
+            <p class="email-modal__content-text">
+              Бесплатно выдается доступ на первые 4 задачи практики
+            </p>
+            <form class="email-modal__content-form" id="email-modal__content-form-recording" method="POST" action="javascript:;" novalidate>
+              <input class="email-modal__content-forminput" id="email-modal__content-tabsforminput" type="email" name="email" placeholder="E-mail">
+              <input type="hidden" id="email-modal__content-tabsforminputcourse" name="course" value="">
+              <button class="email-modal__btn" type="submit">Начать бесплатно</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="email-modal" id="email-modal__sms">
+        <div class="container">
+          <div class="email-modal__content">
+            <button class="email-modal__content-btnclose" type="button">
+              <img class="email-modal__content-btncloseicon" src="images/icon/close.svg" alt="закрыть">
+            </button>
+            <h3 class="email-modal__content-title">Спасибо</h3>
+            <p class="email-modal__content-text">
+              Мы с вами свяжемся в ближайшее время
+            </p>
+            <button class="email-modal__btn" id="email-modal__btn-close">Закрыть</button>
+          </div>
+        </div>
+      </div>
+      <div class="help">
+        <img class="help__icon" src="images/icon/help.svg" alt="help">
+        <p class="help__text">Требуется помощь?</p>
+      </div>
+      <div class="email-modal" id="help-modal">
+        <div class="container">
+          <div class="email-modal__content">
+            <button class="email-modal__content-btnclose" type="button">
+              <img class="email-modal__content-btncloseicon" src="images/icon/close.svg" alt="закрыть">
+            </button>
+            <h3 class="email-modal__content-title">Отправить вопрос</h3>
+            <p class="email-modal__content-text">
+              Бесплатно выдается доступ на первые 4 задачи практики
+            </p>
+            <form class="email-modal__content-form" id="email-modal__content-form-help" method="POST" action="javascript:;" novalidate="">
+              <input class="email-modal__content-forminput" id="email-modal__content-form-helpinputemail" type="email" name="email" placeholder="E-mail">
+              <textarea class="email-modal__content-formtextarea" rows="5" id="email-modal__content-form-helptextareatext" name="text" placeholder="Введите текст"></textarea>
+              <button class="email-modal__btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="email-modal" id="help-modal__sms">
+        <div class="container">
+          <div class="email-modal__content">
+            <button class="email-modal__content-btnclose" type="button">
+              <img class="email-modal__content-btncloseicon" src="images/icon/close.svg" alt="закрыть">
+            </button>
+            <h3 class="email-modal__content-title">тест 123</h3>
+            <p class="email-modal__content-text">
+              1111 213 21321312 3123 sadads
+            </p>
+            <button class="email-modal__btn" id="help-modal__btn-close">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__column-one">
+            <a class="logo" href="#">
+              <img class="logo__images" src="images/logo.svg" alt="лого devopsTrain">
+            </a>
+            <p class="footer__column-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            </p>
+          </div>
+          <div class="footer__column-two">
+            <nav class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#courses">
+                    Курсы
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#works">
+                    Как это работает?
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#benefits">
+                    Преимущества
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#team">
+                    Команда
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#faq">
+                    FAQ
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="#reviews">
+                    Отзывы
+                  </a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link" href="https://wylsa.com">
+                    Блог
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__column-three">
+            <p class="footer__email">Email: <a class="footer__email-link" href="mailto:devops@lifeisfile.com">devops@lifeisfile.com</a></p>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-icon" src="images/icon/twitter.svg" alt="social twitter">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-icon" src="images/icon/telegram.svg" alt="social telegram">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img class="footer__social-icon" src="images/icon/discord.svg" alt="social discord">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">© DevopsTrain 2023</p>
+          <a class="footer__privacy-policy" href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
