@@ -209,7 +209,7 @@ $(document).ready(function () {
             email.removeClass('email-modal__content-forminput--error');
             //ajax email
             $.ajax({
-                url: "https://api.k8school.lifeisfile.com/subscriptions",
+                url: "https://jsonplaceholder.typicode.com/posts",
                 method: "POST",
                 data: { "email": email.val(), "course": course },
                 dataType: "text",
