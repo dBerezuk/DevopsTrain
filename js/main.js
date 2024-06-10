@@ -1,33 +1,33 @@
-//scrolling click
 const smoothLinks = document.querySelectorAll('.menu__item-link,.footer__menu-link,.top__link'),
-      menu        = document.querySelector('.menu'),
-      menuBtn     = document.querySelector('.header__mobile-btn'),
-      faq         = document.querySelectorAll('.courses__accordion-items');
+    menu = document.querySelector('.menu'),
+    menuBtn = document.querySelector('.header__mobile-btn'),
+    faq = document.querySelectorAll('.courses__accordion-items');
+
 for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
         let id = smoothLink.getAttribute('href');
-        if(id[0] == '#'){
+
+        if (id[0] == '#') {
             e.preventDefault();
         }
 
-        if(menu.classList.contains('menu--active')){
+        if (menu.classList.contains('menu--active')) {
             menuBtn.classList.remove('header__mobile-btn--active');
             menu.classList.remove('menu--active');
         }
 
-        if(id == '#faq'){
+        if (id == '#faq') {
             let className = '.courses__subtitle-faq';
-            faq.forEach(function(e){
-                e.setAttribute('style','display: block');
+            faq.forEach(function (e) {
+                e.setAttribute('style', 'display: block');
             });
-            document.querySelectorAll(className).forEach(function(e){
+            document.querySelectorAll(className).forEach(function (e) {
                 e.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
                 });
             });
-        }
-        else{
+        } else {
             document.querySelector(id).scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
@@ -36,47 +36,45 @@ for (let smoothLink of smoothLinks) {
     });
 };
 
-$(document).ready(function(){
-
-    $('.header__mobile-btn').on('click',function(){
+$(document).ready(function () {
+    $('.header__mobile-btn').on('click', function () {
         $(this).toggleClass('header__mobile-btn--active');
         $('.menu').toggleClass('menu--active');
     });
 
-    $('.courses__tabs-btn').on('click',function(){
+    $('.courses__tabs-btn').on('click', function () {
         let idBox = $(this).attr('data-content');
         $('.courses__tabs-btn').removeClass('courses__tabs-btn--active');
+
         $(this).addClass('courses__tabs-btn--active');
         $('.courses__tabs-content').removeClass('courses__tabs-content--active').hide();
         $('#' + idBox).addClass('courses__tabs-content--active').fadeIn();
     });
 
-    $('.courses__tabs-contentbtn').on('click',function(){
-       if($(this).hasClass('courses__tabs-contentbtn--active') == false){
-           $(this).addClass('courses__tabs-contentbtn--active');
-       }
-       else{
-           $(this).removeClass('courses__tabs-contentbtn--active');
-       }
-       $(this).next().slideToggle();
+    $('.courses__tabs-contentbtn').on('click', function () {
+        if ($(this).hasClass('courses__tabs-contentbtn--active') == false) {
+            $(this).addClass('courses__tabs-contentbtn--active');
+        } else {
+            $(this).removeClass('courses__tabs-contentbtn--active');
+        }
+        $(this).next().slideToggle();
     });
 
-    $('.courses__tabs-btnview').on('click',function(){
+    $('.courses__tabs-btnview').on('click', function () {
         $(this).toggleClass('courses__tabs-btnview--active');
-        if($(this).prev().height() === $(this).prev().children('.courses__tabs-infocontent').height()){
-            $(this).prev().css('max-height','333px');
-        }
-        else{
-            $(this).prev().css('max-height',$(this).prev().children('.courses__tabs-infocontent').height());
+        if ($(this).prev().height() === $(this).prev().children('.courses__tabs-infocontent').height()) {
+            $(this).prev().css('max-height', '333px');
+        } else {
+            $(this).prev().css('max-height', $(this).prev().children('.courses__tabs-infocontent').height());
         }
     });
 
-    $('.courses__faq-btn').on('click',function(){
-       $(this).toggleClass('courses__faq-btn--active');
-       $(this).next().slideToggle(300);
+    $('.courses__faq-btn').on('click', function () {
+        $(this).toggleClass('courses__faq-btn--active');
+        $(this).next().slideToggle(300);
     });
 
-    $('.courses__accordion-itemtop').on('click',function(){
+    $('.courses__accordion-itemtop').on('click', function () {
         $(this).children('.courses__accordion-icon').toggleClass('courses__accordion-icon--active');
         $(this).next().slideToggle(300);
     });
@@ -179,21 +177,23 @@ $(document).ready(function(){
         ]
     });
 
-    $('.courses__tabs-linkbtn').on('click',function(){
-       $('#email-modal').addClass('email-modal--active');
-       $('#email-modal__content-tabsforminputcourse').attr("value",$(this).closest('.courses__tabs-content').attr('id'))
+    $('.courses__tabs-linkbtn').on('click', function () {
+        $('#email-modal').addClass('email-modal--active');
+        $('#email-modal__content-tabsforminputcourse').attr("value", $(this).closest('.courses__tabs-content').attr('id'))
     });
-    $('.email-modal__content-btnclose,#email-modal__btn-close,#help-modal__btn-close').on('click',function(){
+
+    $('.email-modal__content-btnclose,#email-modal__btn-close,#help-modal__btn-close').on('click', function () {
         $('.email-modal').removeClass('email-modal--active');
     });
-    $(document).mouseup(function(e){
+
+    $(document).mouseup(function (e) {
         var modal = $(".email-modal__content");
-        if (!modal.is(e.target) && modal.has(e.target).length === 0 ) {
+        if (!modal.is(e.target) && modal.has(e.target).length === 0) {
             $('.email-modal').removeClass('email-modal--active');
         }
     });
 
-    $('.help').on('click',function(){
+    $('.help').on('click', function () {
         $('#help-modal').addClass('email-modal--active');
     });
 
@@ -202,50 +202,47 @@ $(document).ready(function(){
         return regex.test(email);
     }
 
-    $('#email-modal__content-form-recording').on('submit',function(){
+    $('#email-modal__content-form-recording').on('submit', function () {
         let email = $('#email-modal__content-tabsforminput');
         let course = $('#email-modal__content-tabsforminputcourse').val();
-        if(validateEmail(email.val())){
+        if (validateEmail(email.val())) {
             email.removeClass('email-modal__content-forminput--error');
             //ajax email
             $.ajax({
                 url: "https://api.k8school.lifeisfile.com/subscriptions",
                 method: "POST",
-                data: {"email": email.val(), "course": course},
+                data: { "email": email.val(), "course": course },
                 dataType: "text",
                 success: function (data) {
                     $('#email-modal').removeClass('email-modal--active');
                     $('#email-modal__sms').addClass('email-modal--active');
                 }
             });
-        }
-        else{
+        } else {
             email.addClass('email-modal__content-forminput--error');
         }
     });
 
-    $('#email-modal__content-form-help').on('submit',function() {
+    $('#email-modal__content-form-help').on('submit', function () {
         let email = $('#email-modal__content-form-helpinputemail');
         let text = $('#email-modal__content-form-helptextareatext');
-        if(validateEmail(email.val())){
+        if (validateEmail(email.val())) {
             email.removeClass('email-modal__content-forminput--error');
-        }
-        else{
+        } else {
             email.addClass('email-modal__content-forminput--error');
         }
-        if(text.val().length > 0){
+        if (text.val().length > 0) {
             text.removeClass('email-modal__content-forminput--error');
-        }
-        else{
+        } else {
             text.addClass('email-modal__content-forminput--error');
         }
 
-        if(validateEmail(email.val()) && text.val().length > 0){
+        if (validateEmail(email.val()) && text.val().length > 0) {
             //ajax
             $.ajax({
                 url: "https://api.k8school.lifeisfile.com/ask_question_website",
                 method: "POST",
-                data: {"email": email.val(),"details": text.val() },
+                data: { "email": email.val(), "details": text.val() },
                 dataType: "text",
                 success: function (data) {
                     $('#help-modal').removeClass('email-modal--active');
@@ -255,7 +252,6 @@ $(document).ready(function(){
         }
     });
 
-    //url параметр
     let getUrlParameter = function getUrlParameter(sParam) {
         let sPageURL = window.location.search.substring(1),
             sURLVariables = sPageURL.split('&'),
@@ -271,22 +267,23 @@ $(document).ready(function(){
         }
         return false;
     };
-    //открытие таба по значению
+
     let courseParamUrl = getUrlParameter('course');
     let courseBtnParamAttr = $('.courses__tabs-btn[data-content="' + courseParamUrl + '"]');
 
-    if(courseParamUrl && courseBtnParamAttr.length > 0) {
+    if (courseParamUrl && courseBtnParamAttr.length > 0) {
         let courseParamUrlContent = $('#' + courseParamUrl);
+
         $('.courses__tabs-btn').removeClass('courses__tabs-btn--active');
         courseBtnParamAttr.addClass('courses__tabs-btn--active');
+
         $('.courses__tabs-content').removeClass('courses__tabs-content--active').hide();
         courseParamUrlContent.addClass('courses__tabs-content--active').fadeIn();
-        //mobile
+
         $('.courses__tabs-content').children('.courses__tabs-contentbtn--active').next().hide();
         $('.courses__tabs-contentbtn').removeClass('courses__tabs-contentbtn--active');
+
         courseParamUrlContent.children('.courses__tabs-contentbtn').addClass('courses__tabs-contentbtn--active');
         courseParamUrlContent.children('.courses__tabs-content-box').fadeIn();
     }
-
-
 });
