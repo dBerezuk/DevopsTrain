@@ -240,7 +240,7 @@ $(document).ready(function () {
         if (validateEmail(email.val()) && text.val().length > 0) {
             //ajax
             $.ajax({
-                url: "https://api.k8school.lifeisfile.com/ask_question_website",
+                url: "https://jsonplaceholder.typicode.com/posts",
                 method: "POST",
                 data: { "email": email.val(), "details": text.val() },
                 dataType: "text",
